@@ -5,7 +5,7 @@ RUN apt-get update -y && \
   apt-get install -y curl && \
   # installing ping module for cats
   apt-get update -y && \
-  apt-get install -y inetutils-ping -y && \
+  apt-get install iputils-ping -y && \
   cd /tmp && \
   apt-get install awscli -y && \
   rm -rf /tmp/* && \
