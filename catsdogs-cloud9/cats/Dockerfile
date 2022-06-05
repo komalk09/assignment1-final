@@ -2,6 +2,8 @@ FROM nginx
 EXPOSE 80
 RUN apt-get update -y && \
   apt-get upgrade -y && \
+  # installing ping module for cats
+  apt-get install -y inetutils-ping && \
   apt-get install -y curl && \
   cd /tmp && \
   apt-get install awscli -y && \
